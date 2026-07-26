@@ -2,7 +2,7 @@ This repository contains a portfolio of the site I have worked on. Below you wil
 
 
 Website Links for direct viewing:
-https://rasapoli.github.io/Portfolio-Website/Website Bakery - University assignment
-https://rasapoli.github.io/Portfolio-Website/Website Early Portfolio - University assignment
-https://rasapoli.github.io/Portfolio-Website/Website Neuroscience - University assignment
-https://rasapoli.github.io/Portfolio-Website/Website University Course - University assignment
+https://rasapoli.github.io/Portfolio-Websites/Website Bakery - University assignment
+https://rasapoli.github.io/Portfolio-Websites/Website Early Portfolio - University assignment
+https://rasapoli.github.io/Portfolio-Websites/Website Neuroscience - University assignment
+https://rasapoli.github.io/Portfolio-Websites/Website University Course - University assignment
