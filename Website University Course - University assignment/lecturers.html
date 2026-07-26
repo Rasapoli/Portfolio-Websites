@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Lecturers</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+</script>
+
+  <div id="header"><a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Logo place holder"> </a></div>
+
+        <div id="navigation">
+            <div id="tagline" >Understanding The Internet</div>
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle on">Course▼</a>
+                <div class="dropdown-menu">
+                    <a href="program.html">Program</a>
+                    <a href="lecturers.html" class="on">Lecturers</a>
+                    <a href="description.html">Description</a>
+                </div>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle">About▼</a>
+                <div class="dropdown-menu">
+                    <a href="about.html">About us</a>
+                    <a href="location.html">Location</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <a href="sponsors.html">Sponsors</a>
+            <div id="register"><a href="register.html">Register</a></div>
+        </div>
+
+    <div id="content">
+      <h1>Lecturers</h1>
+      <br>
+      <br>
+      <p1> 
+        Four lecturers will guide you though media literacy. Each come from different university and backgrounds to offer the most divers, broad and extensive expertise into media literacy. 
+        <br>
+        <br>
+        <h2>Dr. Elridge – Specialist in digital communication and media ethics</h2>
+        <br>
+        <br>
+        <img src="guy4.jpg" alt="Picture of Dr. Elridge">
+        <br>
+        ... will guide you through the theoretical framework accommodated with Media Literacy. She will utilize her extensive background into social media research to further your understanding. She has 5 years worth of teaching experience, and is ....
+        <br>
+        <br>
+        Digital Communication & Media Ethics
+        <br>
+        <i>- Dr. Samuel Elridge is a senior lecturer and researcher focused on the intersection of media, ethics, and technology. With over a decade of experience in public broadcasting and academic publishing, she specializes in teaching students how to critically assess media influence and representation. - </i>
+        <br>
+        <br>
+        <h2>Prof. Theo Vargas – Researcher in algorithmic bias and online behavior</h2>
+        <br>
+        <br>
+        <img src="guy3.jpg" alt="Picture of Prof. Theo Vargas">
+        <br>
+        ... will guide you through the theoretical framework accommodated with Media Literacy. She will utilize her extensive background into social media research to further your understanding. She has 5 years worth of teaching experience, and is ....
+        <br>
+        <br>
+        Algorithmic Bias & Online Behavior
+        <br>
+        <i>- Prof. Vargas blends a background in computer science and sociology to explore how algorithms shape digital experiences. His recent work investigates the psychological impact of filter bubbles and the ethical design of recommendation systems. - </i>
+        <br>
+        <br>
+      </p1>
+      </div>
+      <div id="line">
+      </div>
+      <div id="content2">
+        <p1>
+        <h2>Dr. Steven Pier – Journalist and expert in misinformation and verification</h2>
+        <br>
+        <br>
+        <img src="guy1.jpg" alt="Picture of Dr. Steven Pier">
+        <br>
+        ... will guide you through the theoretical framework accommodated with Media Literacy. She will utilize her extensive background into social media research to further your understanding. She has 5 years worth of teaching experience, and is ....
+        <br>
+        <br>
+        Misinformation & Fact-Checking
+        <br>
+        <i> - Dr. Steven Pier is a former investigative journalist who transitioned into academia after years of reporting on political misinformation and media manipulation. She now trains future journalists and researchers in advanced verification techniques and media accountability. - </i>
+        <br>
+        <br>
+        <h2>Mr. Jamal Bennett – Media strategist and cultural critic</h2>
+        <br>
+        <br>
+        <img src="guy2.jpg" alt="Picture of Mr. Jamal Bennett">
+        <br>
+        ... will guide you through the theoretical framework accommodated with Media Literacy. She will utilize her extensive background into social media research to further your understanding. She has 5 years worth of teaching experience, and is ....
+        <br>
+        <br>
+        Media Strategy & Cultural Criticism
+        <br>
+        <i> - A seasoned media strategist and former editor of a leading digital magazine, Mr. Bennett lectures on the cultural forces that shape news cycles, online trends, and media consumption. His work emphasizes media literacy as a tool for empowerment and civic engagement. - </i>
+        <br>
+        <br>
+      </p1>
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+          Chamber of Commerce  (13.57.92.468)
+          <br>
+          organized by the Groningen University Institute for the Development of Education
+          <br>
+          <br>
+        </div>
+      </div>
+      
+
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>

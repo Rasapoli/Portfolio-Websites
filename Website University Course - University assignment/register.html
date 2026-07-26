@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+</script>
+
+  <div id="header"><a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Logo place holder"> </a></div>
+
+
+<div id="navigation">
+          <div id="tagline" >Understanding The Internet</div>
+          <a href="index.html">Home</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Course▼</a>
+              <div class="dropdown-menu">
+                  <a href="program.html">Program</a>
+                  <a href="lecturers.html">Lecturers</a>
+                  <a href="description.html">Description</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About▼</a>
+              <div class="dropdown-menu">
+                  <a href="about.html">About us</a>
+                  <a href="location.html">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <a href="sponsors.html">Sponsors</a>
+          <div id="register"><a href="register.html" class="on">Register</a></div>
+          
+          
+      </div>
+
+    <div id="content">
+      <h1>Register Here</h1>
+      <br>
+      <br>
+      <p1>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">Gender
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Friends</option>
+            <option value="2">Folders</option>
+            <option value="3">Adds</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+    </p>
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        organized by the Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>

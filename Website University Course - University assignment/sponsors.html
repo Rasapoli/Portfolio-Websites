@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Sponsors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+  
+</script>
+
+  <div id="header"><a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Logo place holder"> </a></div>
+
+<div id="navigation">
+          <div id="tagline" >Understanding The Internet</div>
+          <a href="index.html">Home</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Course▼</a>
+              <div class="dropdown-menu">
+                  <a href="program.html">Program</a>
+                  <a href="lecturers.html">Lecturers</a>
+                  <a href="description.html">Description</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About▼</a>
+              <div class="dropdown-menu">
+                  <a href="about.html">About us</a>
+                  <a href="location.html">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <a href="sponsors.html" class="on">Sponsors</a>
+          <div id="register"><a href="register.html">Register</a></div>
+          
+          
+      </div>
+
+    <div id="content">
+      <h1>Sponsors</h1>
+      <br>
+      <br>
+      <p1>
+        The course Media literacy is organised by the Groningen University Institute for the Development of Education, a RUG-related non-profit organisation that brings together visionaries in the field of academics and communication. 
+        <br>
+        <br>
+        This event would not be possible without the support of our sponsors:
+        <br>
+        <br>
+      </p1>
+      <p1>
+        <h2>copycat-communication-copywriting-specialists</h2>
+        <br>
+        <br>
+      <img src="copycat-communication-copywriting-specialists.png" alt="">
+      <br>
+      <br>
+      <h2>greeningroningen-eco-magazine</h2>
+      <br>
+      <br>
+      <img src="greeningroningen-eco-magazine.jpg" alt="">
+      <br>
+      <br>
+      <h2>omniax-group-communication-consultants</h2>
+      <br>
+      <img src="omniax-group-communication-consultants.jpg" alt="">
+      <br>
+      <br>
+      <h2>bright-ideas-marketing-050</h2>
+      <br>
+      <br>
+      <img src="bright-ideas-marketing-050.jpg" alt="">
+      <br>
+      <br>
+      <h2>small-steps</h2>
+      <br>
+      <br>
+      <img src="small-steps.png" alt="">
+      <br>
+      <br>
+      <h2>organico</h2>
+      <br>
+      <br>
+      <img src="organico.jpg" alt="">
+      <br> 
+      <br>
+     We would also like to offer a small budget for food and drinks at the summer school. So, if you find our course intrgueing feel free to contact us. 
+   </p1>
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        organized by the Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>

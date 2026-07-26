@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div id="container">
+
+      <div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+</script>
+
+      <div id="header"> <a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Media literacy logo"> </a></div>
+
+      <div id="navigation">
+          <div id="tagline" >Understanding The Internet</div>
+          <a href="index.html" class="on">Home</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Course▼</a>
+              <div class="dropdown-menu">
+                  <a href="program.html">Program</a>
+                  <a href="lecturers.html">Lecturers</a>
+                  <a href="description.html">Description</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">About▼</a>
+              <div class="dropdown-menu">
+                  <a href="about.html">About us</a>
+                  <a href="location.html">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <a href="sponsors.html">Sponsors</a>
+          <div id="register"><a href="register.html">Register</a></div>
+          
+          
+      </div>
+
+      <div id="content">
+        <h1>Media literacy</h1>
+        <br>
+        <br>
+          <h2>How can you explore without understanding?</h2>
+          <p1>
+        <br>
+        <br>
+          Without understanding and good guiding principles, exploring anything becomes an exhausting task. You as students may have found that the internet can be a devisive place full of different ideas and intentions. You may at times have felt lost or our of your depth. Our aim is to introduce A strong framework and possiblities to saftily traverse the internet with a sense of control. 
+        <br>
+        <br>
+        <strong>What will you learn?</strong>
+        <br>
+        <br>
+        <ul>
+        <li>The digital landscape</li>
+        <li>Ability to spot fake news</li>
+        <li>Media strategies</li>
+        <li>Understanding of Algorithmic  biases.</li>
+        </ul>
+        <br>
+        <br>
+        <strong>Where?</strong> 
+        <br>
+        <br>
+        Groningen, Hamonie complex
+          <br>
+          <br>
+          <strong>When?</strong>
+          <br>
+          <br>
+        The 4th and 5th of July (Friday & Saturday)
+        <br>
+        <br>
+        <strong>Cost</strong>
+        <br>
+        <br>
+        The course will cost 120 euro's, will consist of 2 days and include some drinks and food.  
+        <br>
+        <br>
+        <strong><a href="register.html">Register</a></strong>
+        <br>
+        <br>
+        For further information or questions, <a href="contact.html">contact</a> us. 
+          <img src="cat.jpg" alt="Play Audio" class="audio-image" onclick="document.getElementById('cat').play()">
+          <audio id="cat" autoplay>
+            <source src="soundbyte.mp3" type="audio/mpeg">
+          </audio>
+        </p1>
+      </div>
+        <div id="line"></div>
+        <div id="content2">
+            <p1>
+            <div id="slideshow-container">
+              <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="fake-news.jpg" style="width:100%">
+                  <div class="text">Caption Text</div>
+              </div>
+
+              <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="classroom.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+              </div>
+
+              <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="adds.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+              <script>
+                  let slideIndex = 0;
+                  showSlides();
+
+                  function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 6000); // Change image every 2 seconds
+                  }
+              </script>
+              </div>
+            </p1>
+      </div>
+
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        organized by the Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+    </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+
+
+  </body>
+
+</html>     

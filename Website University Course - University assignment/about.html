@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>About Us - </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+</script>
+
+  <div id="header"><a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Logo place holder"> </a></div>
+
+<div id="navigation">
+          <div id="tagline" >Understanding The Internet</div>
+          <a href="index.html">Home</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Course▼</a>
+              <div class="dropdown-menu">
+                  <a href="program.html">Program</a>
+                  <a href="lecturers.html">Lecturers</a>
+                  <a href="description.html">Description</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle on">About▼</a>
+              <div class="dropdown-menu">
+                  <a href="about.html" class="on">About us</a>
+                  <a href="location.html">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <a href="sponsors.html">Sponsors</a>
+          <div id="register"><a href="register.html">Register</a></div>
+          
+          
+      </div>
+
+    <div id="content">
+      <h1>About Us</h1>
+      <br>
+      <br>
+      <p1>
+      <strong> About the Groningen University Institute for the Development of Education</strong>
+      <br>
+      <br>
+      We are a University of Groningen related non-profit organisation that brings together visionaries in the field of academics, education and communication.
+      We started in April 2022 and have grown to an organisation of 4 staff-members and several volunteers.
+      These permanent staff-members are:
+      <br>
+      <br>
+      </p1>
+      <h2>Johanna "Hanny" B. Smith</h2>
+      <br>
+      <p1>
+      Director at 050Learn.nl. She maintains an impressive social network and tries to attend every educational event that takes place in Groningen. 
+      People love her enthusiasm for Groningen and its beauty. When she's not working (which is a rare thing) she is also a part-time photographer.
+      In her local prize-winning photos, you can see her keen eye for detail.
+      <br>
+      <img src="johanna.jpg" alt="Picture of Johanna &#x22;Hanny&#x22; B. Smith">
+      <br>
+      <br>
+      </p1>
+    
+      <h2>Temyra "the Face" Peckleton</h2>
+      <br>
+      <p1>
+      Temyra is a part-time lecturer at the RUG who loves to challenge herself on a daily basis.
+      She's nicknamed 'the Face' for her ability to attract publicity and focus this on every project she's involved in.
+      <br>
+      <img src="temyra.jpg" alt="Picture of Temyra &#x22;the Face&#x22; Peckleton">
+      <br>
+      <br>
+      </p1>
+      <h2>Helen Madeline "Maddie" Murdow</h2>
+      <br>
+      <p1>
+      In Maddie's every day life she is, besides a lecturer at the Faculty of Arts, an helicopter pilot and very active on social media.
+      Her Instagram account has more than 19.000 followers. 
+      In her posts she reflects on fun chopper trips in and around Groningen, and occasionally invites her insta-fans to fly with her.
+      <br>
+      <img src="helen.jpg" alt="Picture of Helen Madeline &#x22;Maddie&#x22; Murdow">
+      </p1>
+      <br>
+      <br>
+      <h2>Barbara "B.A." Baracchi</h2>
+      <br>
+      <p1>
+      Barbara is our latest staff member. She loves to drink milk and is mostly interested in technical stuff. 
+      As a Communication student she began a YouTube channel, repairing gadgets, which now has more than 41.000 subscribers.
+      <br>
+      <img src="barbara.jpg" alt="Picture of Barbara &#x22;B.A.&#x22; Baracchi">
+      <br>
+      <br>
+      </p1>
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        &#169; Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>

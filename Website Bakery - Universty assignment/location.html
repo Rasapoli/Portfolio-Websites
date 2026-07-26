@@ -1,0 +1,107 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+	<title>Jenny & Tammy&#x27;s Cupcake&#x27;s - Location</title>
+    <meta name="description" content="Jenny & Tammy &#x27;Location - Where to find us? - A Taste of Home">
+    <meta name="keywords" content="Cupcakes, Cakes, Bakery, Desserts, Recipes, mother and daughter, Birthdays, Weddings, Parties, Anniversaries">
+    <meta name="owner" content="Jenny & Tammy">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<nav>
+				<ul class="sidebar">
+                    <ul class="first-row-sidebar">
+                        <li class="sidebar_logo"><img src="cupcake_logo.svg"></li>
+                        <li class="sidebar_tagline"><a href="index.html">A Taste of Home</a></li>
+                        <li onclick=hideSidebar() class="hide_bar_button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    </ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+                        <a href="#">Let&#x27;s Bake<img src="dropdownarrow.svg" class="dropdownarrow"></a>
+                            <ul class="dropdown_sidebar">
+                                <li><a href="bakery.html">Bakery</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="recipes.html" >Recipes</a></li>
+                                <li><a href="cakes.html">Cakes</a></li>
+                            </ul>
+                    </li>
+                    <li class="on">
+                        <a href="#">About<img src="dropdownarrow.svg" class="dropdownarrow"></a>
+                            <ul class="dropdown_sidebar">
+                                <li><a href="about.html">About us</a></li>
+                                <li class="on"><a href="location.html">Location</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                    </li>
+					<li class="ordering_sidebar"><a href="order.html">Order</a></li>
+				</ul>
+				<ul>
+                    <div class="nav-left">
+                        <li><img src="cupcake_logo.svg"></li>
+                        <li><a href="index.html">A Taste of Home</a></li>
+                    </div>
+					<li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile">
+                        <a href="#">Let&#x27;s Bake<img src="dropdownarrow.svg" class="dropdownarrow"></a>
+                            <ul class="dropdown">
+                                <li><a href="bakery.html">Bakery</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="recipes.html">Recipes</a></li>
+                                <li><a href="cakes.html">Cakes</a></li>
+                            </ul>
+                    </li>
+                    <li class="hideOnMobile on">
+                        <a href="#">About<img src="dropdownarrow.svg" class="dropdownarrow"></a>
+                            <ul class="dropdown">
+                                <li><a href="about.html">About us</a></li>
+                                <li class="on"><a href="location.html">Location</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                    </li>
+					<li class="hideOnMobile ordering"><a href="order.html">Order</a></li>
+					<li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#a0a0a0"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>   
+				</ul>
+			</nav>
+   		</div>
+
+		<div id="content">
+                <h1>Location</h1>
+                <p>We bake all our cakes right over here ;)
+                <br>
+                Location on maps.
+                <br>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777.860129647639!2d6.559399676390259!3d53.219102284237124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd4fd9aeb2b3%3A0x402cadafbaac73ac!2sHarmoniegebouw!5e0!3m2!1snl!2snl!4v1744986539506!5m2!1snl!2snl" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <br>
+                If you still have any question about the location feel free to <a href="contact"> contact us</a>.
+		</div>
+
+		<div id="footer">
+				<ul>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+                    <br>
+                    <li>Chamber of Commerce: (86.75.309)</li>
+				</ul>
+        </div>
+
+	</div>
+
+	<script>
+		function showSidebar(){
+			const sidebar = document.querySelector(".sidebar")
+			sidebar.style.display = "flex"
+		}
+		function hideSidebar(){
+			const sidebar = document.querySelector(".sidebar")
+			sidebar.style.display = "none"
+		}
+	</script>
+</body>
+</html>

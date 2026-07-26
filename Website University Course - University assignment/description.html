@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Description</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+</script>
+
+<div id="header"> <a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Media literacy logo"> </a></div>
+
+<div id="navigation">
+    <div id="tagline" >Understanding The Internet</div>
+    <a href="index.html" class="on">Home</a>
+
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">Bakery▼</a>
+        <div class="dropdown-menu">
+            <a href="bakery.html">Bakery</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="cakes.html">Cakes</a>
+        </div>
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle">About▼</a>
+        <div class="dropdown-menu">
+            <a href="about.html">About us</a>
+            <a href="location.html">Location</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div id="Ordering"><a href="ordering.html">Ordering</a></div>
+    
+    
+</div>
+
+    <div id="content">
+      <h1>Description</h1>
+      <br>
+      <br>
+      <p1>In an era marked by rapid technological advancements and an overwhelming influx of information, it is increasingly important for individuals to develop the skills necessary to critically engage with and navigate media messages. This course provides students with a comprehensive understanding of media literacy, emphasizing the need to analyze, deconstruct, and respond to a variety of media forms, both traditional and non-traditional. Students will explore the complex relationship between media, society, and democracy, and will learn how to recognize biases in news reporting, advertisements, social media, and other digital content.
+      <br>
+      <br>
+      The course will introduce foundational principles of media literacy, including visual literacy, semiotics, and ideological analysis. Students will examine how media messages are constructed, how they influence societal values and perceptions, and how these messages are often shaped by commercial interests and specific cultural ideologies. The course will also address critical issues such as the representation of gender and ethnicity in media, the role of inclusive language, and the evolving impact of artificial intelligence on journalism.
+      <br>
+      <br>
+      Through a combination of theoretical analysis and practical application, students will develop the skills necessary to engage with media content thoughtfully and critically. The course will encourage students to examine their own media consumption habits, recognize their biases as both consumers and producers of media, and cultivate a more inclusive and diverse approach to news sources. Students will gain practical media skills, such as using digital tools like Photoshop, to critique and create media content that challenges mainstream narratives.
+      <br>
+      <br>
+      By the end of the course, students will have a deeper understanding of the role of media in shaping public opinion, influencing political discourse, and contributing to broader societal trends. They will also acquire the tools needed to become more active, informed, and reflective participants in a media-saturated world.
+      <br>
+      <br>
+      </p1>
+    </div>
+    <div id="line">
+      </div>
+      <div id="content2">
+      
+      <h1>Course Objectives:</h1>
+      <p1>
+      <br>
+      <br>
+      <ul>
+        <li>Develop a critical understanding of visual media and the underlying messages communicated through images and symbols.</li>
+        <br>
+        <li>Explore the role of semiotics in media interpretation, focusing on how meaning is constructed in different forms of media.</li>
+        <br>
+        <li>Investigate the influence of ideology on media production and consumption, and recognize how media perpetuates specific worldviews.</li>
+        <br>
+        <li>Examine the representation of gender, ethnicity, and other social categories in media and analyze the implications of these portrayals on societal perceptions.</li>
+        <br>
+        <li>Analyze the intersection of media and commercial culture, and understand how advertising, branding, and market forces shape media content.</li>
+        <br>
+        <li>Develop proficiency in using digital tools like Photoshop to create and critique media content, applying these skills to explore media from a production perspective.</li>
+        <br>
+        <li>Reflect on personal biases as a consumer and editor of media, and apply these insights to more balanced and critical media engagement.</li>
+        <br>
+        <li>Investigate the impact of emerging technologies, such as artificial intelligence, on media creation, distribution, and consumption.</li>
+      </ul>
+      <br>
+      <br>
+        This course will prepare students to not only critically evaluate the media they encounter daily but also to use media as a tool for informed, responsible participation in democratic processes.
+      <br>
+      <br>
+      <br>
+      </p1>
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        organized by the Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+      
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>

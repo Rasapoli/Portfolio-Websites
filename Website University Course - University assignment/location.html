@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Location</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+  <div id="container">
+
+<div id="nav-toggle">&#9776;
+      </div>
+
+      <script>
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    document.getElementById("navigation").classList.toggle("show");
+    document.getElementById("header").classList.toggle("show");
+  });
+  
+</script>
+
+  <div id="header"><a href="index.html"> <img src="media_literacy_logo_alt.svg" alt="Logo place holder"> </a></div>
+
+<div id="navigation">
+          <div id="tagline" >Understanding The Internet</div>
+          <a href="index.html">Home</a>
+
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Course▼</a>
+              <div class="dropdown-menu">
+                  <a href="program.html">Program</a>
+                  <a href="lecturers.html">Lecturers</a>
+                  <a href="description.html">Description</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle on">About▼</a>
+              <div class="dropdown-menu">
+                  <a href="about.html">About us</a>
+                  <a href="location.html" class="on">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+          </div>
+          <a href="sponsors.html">Sponsors</a>
+          <div id="register"><a href="register.html">Register</a></div>          
+          
+      </div>
+
+    <div id="content">
+      <h1>Location</h1>
+      <br>
+      <br>
+      <p1>The course social literacy will take place in the harmony building in the city center of Groningen. See the <a href="program">program</a> page for the specific rooms for each course. 
+      <br>
+      <br>
+      Location on maps.
+      <br>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4777.860129647639!2d6.559399676390259!3d53.219102284237124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd4fd9aeb2b3%3A0x402cadafbaac73ac!2sHarmoniegebouw!5e0!3m2!1snl!2snl!4v1744986539506!5m2!1snl!2snl" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+      If you still have any question about the location feel free to <a href="contact"> contact us</a>.
+      <br>
+      <br>
+      <strong>How to get there:</strong><br>
+      accessibility<br>
+      bike, car, train
+      </p1>
+
+    </div>
+
+      <div id="footer">
+        <a href="contact.html">Contact</a>
+        <br>
+         <a href="location.html">Location</a>
+        <br>
+        <a href="about.html">About Us</a>
+        <br>
+        <div id="footertext">
+        Chamber of Commerce  (13.57.92.468)
+        <br>
+        organized by the Groningen University Institute for the Development of Education
+        <br>
+        <br>
+      </div>
+      </div>
+
+        </div>
+
+<script>
+  // Allow dropdowns to toggle on click
+  document.querySelectorAll('.dropdown-toggle').forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // prevent link behavior
+      const dropdownMenu = this.nextElementSibling;
+      
+      // Close other open dropdowns
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        if (menu !== dropdownMenu) menu.style.display = 'none';
+      });
+
+      // Toggle this dropdown
+      dropdownMenu.style.display = 
+        dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  // Optional: close dropdown if clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.dropdown')) {
+      document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+</script>
+
+      </body>
+      </html>
